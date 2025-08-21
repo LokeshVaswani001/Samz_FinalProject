@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookEasy - Your Hassle-Free Booking Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="main-header" id="main-header">
+        <div class="container navbar">
+            <a href="index.html" class="nav-logo">BookEasy</a>
+            <nav><ul class="nav-links"><li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="booking.html">Booking</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-backgrounds">
+                <div class="hero-bg active" style="background-image: url('images/background1.jpeg');"></div>
+                <div class="hero-bg" style="background-image: url('images/background2.jpeg');"></div>
+                <div class="hero-bg" style="background-image: url('images/background3.jpeg');"></div>
+            </div>
+            <div class="container hero-content"><h1 class="reveal" id="typewriter-heading"></h1><p class="reveal">Your go-to platform for hassle-free bookings, offering top-notch service and unbeatable prices.</p><a href="booking.html" class="btn btn-primary reveal" data-magnetic>Book Now</a></div>
+        </section>
+        
+        <section class="section container">
+            <div class="reveal"><h2 class="section-title animate-letters">Why Choose Us?</h2><p style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">We simplify the booking process with a user-friendly platform, dedicated customer support, and a commitment to providing the best value for your travel and service needs.</p></div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 16v-2l-8.5-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V9L2 14v2l8.5-2.5V19L8 20.5V22l4-1 4 1v-1.5L13.5 19v-5.5L22 16z"/></svg>
+                    </div>
+                    <h3>Easy Flight Booking</h3>
+                    <p>Find and book domestic and international flights in just a few clicks.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                    </div>
+                    <h3>Hotel Reservations</h3>
+                    <p>Access a vast network of hotels worldwide to find your perfect stay.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 10V6c0-1.1-.9-2-2-2H4c-1.1 0-1.99.9-1.99 2v4c1.1 0 1.99.9 1.99 2s-.89 2-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c-1.1 0-2-.9-2-2s.9-2 2-2zM15 15H9v-2h6v2zm0-4H9v-2h6v2z"/></svg>
+                    </div>
+                    <h3>Event Tickets</h3>
+                    <p>Secure your spot at concerts, sporting events, and theater shows.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section how-it-works angled-top">
+            <div class="container">
+                <div class="reveal"><h2 class="section-title animate-letters">Get Started in 3 Simple Steps</h2></div>
+                <div class="how-it-works-wrapper reveal">
+                    <div class="steps-list">
+                        <div class="step-item-interactive active" data-step="1">
+                            <div class="step-number-interactive">1</div>
+                            <div>
+                                <h3>Search & Discover</h3>
+                                <p>Enter your destination or event and browse a wide range of options.</p>
+                            </div>
+                        </div>
+                        <div class="step-item-interactive" data-step="2">
+                            <div class="step-number-interactive">2</div>
+                            <div>
+                                <h3>Select & Customize</h3>
+                                <p>Choose your preferred option and add any extras you may need.</p>
+                            </div>
+                        </div>
+                        <div class="step-item-interactive" data-step="3">
+                            <div class="step-number-interactive">3</div>
+                            <div>
+                                <h3>Book & Enjoy</h3>
+                                <p>Confirm your booking with our secure payment system and you're all set!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-visuals">
+                        <img src="images/step1.jpeg" class="step-image active" data-step="1">
+                        <img src="images/step2.jpeg" class="step-image" data-step="2">
+                        <img src="images/step3.png" alt="Enjoy your vacation" class="step-image" data-step="3">
+                    </div>
+                </div>
+                <div class="steps-progress-bar-container reveal">
+                    <div class="steps-progress-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container angled-both">
+            <div class="reveal"><h2 class="section-title animate-letters">Featured Tours</h2></div>
+            <div class="tours-grid">
+                <div class="tour-card reveal" data-tilt>
+                    <img src="images/tour1.jpeg">
+                    <div class="tour-card-content">
+                        <h3>Tokyo by Night</h3>
+                        <p>Explore the vibrant nightlife and futuristic cityscapes of Japan's capital.</p>
+                        <div class="tour-card-footer">
+                            <span class="price">$1,200</span>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-tilt>
+                    <img src="images/tour2.jpeg" alt="Tour in Italy">
+                    <div class="tour-card-content">
+                        <h3>Amalfi Coast Wonders</h3>
+                        <p>Discover the breathtaking cliffs and charming villages of Italy's coastline.</p>
+                        <div class="tour-card-footer">
+                            <span class="price">$950</span>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card reveal" data-tilt>
+                    <img src="images/tour3.jpeg" alt="Tour in France">
+                    <div class="tour-card-content">
+                        <h3>Parisian Romance</h3>
+                        <p>Experience the iconic landmarks and artistic soul of the City of Love.</p>
+                        <div class="tour-card-footer">
+                            <span class="price">$1,100</span>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner parallax-container">
+            <div class="parallax-bg"></div>
+            <div class="container cta-content">
+                <div class="reveal">
+                    <h2>Ready for an Adventure?</h2>
+                    <p>Let us help you plan your next unforgettable journey. Book now and create memories that will last a lifetime.</p>
+                    <a href="booking.html" class="btn btn-primary" data-magnetic>Start Booking</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="reveal"><h2 class="section-title animate-letters">From Our Blog</h2></div>
+            <div class="blog-grid">
+                <a href="#" class="blog-post reveal">
+                    <div class="blog-image-wrapper">
+                        <img src="images/blog1.jpeg">
+                        <h3 class="blend-text">Top 10 Hiking Trails for Beginners</h3>
+                    </div>
+                    <div class="blog-content"><p>Discover breathtaking trails that are perfect for those new to hiking. Pack your bags and get ready to explore the great outdoors!</p></div>
+                </a>
+                <a href="#" class="blog-post reveal">
+                    <div class="blog-image-wrapper">
+                        <img src="images/blog2.jpeg" alt="Exotic food">
+                        <h3 class="blend-text">A Foodie's Guide to Southeast Asia</h3>
+                    </div>
+                    <div class="blog-content"><p>From street food stalls to fine dining, embark on a culinary journey through the vibrant flavors of Southeast Asia.</p></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section testimonial-section angled-top">
+            <div class="container">
+                <div class="reveal"><h2 class="section-title animate-letters">What Our Customers Say</h2></div>
+                <div class="testimonial-slider-container reveal">
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <div class="testimonial-slide"><p>"Booking my family vacation through BookEasy was a breeze! The interface is so intuitive and we found the perfect hotel at a great price."</p><span class="author">- Sarah L., New York</span></div>
+                        <div class="testimonial-slide"><p>"I use BookEasy for all my business travel. It saves me so much time and the customer service is always responsive and helpful."</p><span class="author">- John D., London</span></div>
+                        <div class="testimonial-slide"><p>"Got last-minute concert tickets without any hassle. The whole process took less than five minutes. Highly recommended!"</p><span class="author">- Emily R., Sydney</span></div>
+                    </div>
+                    <div class="slider-nav"><button id="prev-testimonial">‹</button><button id="next-testimonial">›</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>BookEasy</h4><p>Your one-stop platform for easy, reliable, and affordable bookings worldwide.</p></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="about.html">About Us</a></li><li><a href="booking.html">Booking</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+                <div class="footer-col"><h4>Legal</h4><ul style="list-style: none;"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 BookEasy. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-to-top-btn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></svg>
+    </a>
+
+    <div id="ai-chat-container">
+        <div id="ai-chat-button" data-magnetic>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30px" height="30px">
+                <path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V4c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v13l4-4h9c1.1 0 2-.9 2-2z"/>
+            </svg>
+        </div>
+        <div id="ai-chat-window">
+            <div class="chat-header"><span>AI Assistant</span><button id="close-chat-btn">&times;</button></div>
+            <div class="chat-body"><div class="message received"><p>Hello! How can I help you with your booking today?</p></div></div>
+            <div class="chat-footer"><input type="text" placeholder="Type a message..."><button>Send</button></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

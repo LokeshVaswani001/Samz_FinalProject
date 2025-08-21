@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make a Booking - BookEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+    <header class="main-header scrolled" id="main-header"><div class="container navbar"><a href="index.html" class="nav-logo">BookEasy</a><nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="booking.html" class="active">Booking</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+    <main>
+        <section class="section container" style="padding-top: 10rem;">
+            <div class="reveal"><h2 class="section-title animate-letters">Create Your Booking</h2></div>
+            <div class="multi-step-form-container">
+                <div class="booking-form form-container reveal">
+                    <div class="progress-bar"><div class="progress-step active"><div class="step-circle">1</div>Details</div><div class="progress-step"><div class="step-circle">2</div>Personal</div><div class="progress-step"><div class="step-circle">3</div>Confirm</div></div>
+                    <form id="booking-form" novalidate>
+                        <div class="form-step active">
+                            <h3 style="margin-bottom: 1.5rem;">Step 1: Booking Details</h3>
+                            <div class="form-group"><label for="service">Select Service</label><select id="service" name="service" required><option value="">-- Please choose an option --</option><option value="Flight">Flight Booking</option><option value="Hotel">Hotel Reservation</option><option value="Event">Event Ticket</option></select></div>
+                            <div class="form-group"><label for="date">Date</label><input type="date" id="date" name="date" required><div class="error-message">Please select a valid future date.</div></div>
+                        </div>
+                        <div class="form-step">
+                             <h3 style="margin-bottom: 1.5rem;">Step 2: Personal Information</h3>
+                             <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required><div class="error-message">Please enter your full name.</div></div>
+                             <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" required><div class="error-message">Please enter a valid email address.</div></div>
+                        </div>
+                        <div class="form-step">
+                             <h3 style="margin-bottom: 1.5rem;">Step 3: Confirmation</h3>
+                             <p>Please review your booking details in the summary panel. If everything is correct, please submit your booking.</p>
+                        </div>
+                        <div class="form-buttons"><button type="button" class="btn" id="prev-btn" style="display: none;">Previous</button><button type="button" class="btn btn-primary" id="next-btn" data-magnetic>Next</button></div>
+                        <div id="form-success-message">Your booking has been submitted successfully!</div>
+                    </form>
+                </div>
+                <aside class="booking-summary reveal"><h3>Booking Summary</h3><ul id="summary-list"><li><strong>Service:</strong> <span id="summary-service">Not Selected</span></li><li><strong>Date:</strong> <span id="summary-date">Not Selected</span></li><li><strong>Name:</strong> <span id="summary-name">Not Entered</span></li></ul></aside>
+            </div>
+        </section>
+        <section class="section container">
+             <div class="reveal"><h2 class="section-title animate-letters">Frequently Asked Questions</h2></div>
+             <div class="faq-accordion reveal">
+                <div class="faq-item"><div class="faq-question">What is the cancellation policy?</div><div class="faq-answer"><p>Our cancellation policy varies depending on the service booked. For flights and hotels, please refer to the terms provided before checkout. Event tickets are generally non-refundable.</p></div></div>
+                <div class="faq-item"><div class="faq-question">What payment methods do you accept?</div><div class="faq-answer"><p>We accept all major credit cards, including Visa, MasterCard, and American Express, as well as PayPal.</p></div></div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer"><div class="container"><div class="footer-bottom"><p>&copy; 2025 BookEasy. All Rights Reserved.</p></div></div></footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" id="scroll-to-top-btn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
